@@ -1,0 +1,48 @@
+<div class="wraper">
+  <section class="form">
+    <div>
+      <label for="title">Título: </label>
+      <input
+        type="text"
+        id="title"
+        placeholder="Indique el título"
+        [(ngModel)]="newNoticia.title"
+      />
+    </div>
+
+    <div>
+      <label for="img">Imagen: </label>
+      <input
+        type="text"
+        class="img"
+        placeholder="Indique la dirección url"
+        [(ngModel)]="newNoticia.img"
+      />
+    </div>
+    <div>
+      <label for="texto">Texto: </label>
+      <!-- <input type="text" id="texto" placeholder="Indique el texto" [(ngModel)]="newNoticia.texto" /> -->
+      <textarea
+        name="text"
+        id="text"
+        cols="30"
+        rows="8"
+        [(ngModel)]="newNoticia.texto"
+      ></textarea>
+    </div>
+
+    <div>
+      <label for="date">Fecha: </label>
+      <input
+        type="text"
+        id="date"
+        placeholder="Indique la fecha"
+        [(ngModel)]="newNoticia.date"
+      />
+    </div>
+
+    <button (click)="getDataForm()">
+      <span>Enviar</span>
+    </button>
+  </section>
+</div>

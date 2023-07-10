@@ -1,0 +1,28 @@
+<header>
+  <div class="separador1">
+    <img src="assets/21601.png" alt="" />
+    <nav class="nav1">
+      <ul >
+        <li><a href="#">INICIO</a></li>
+        <li><a href="#">PORTADA</a></li>
+        <li><a href="#">DEPORTES</a></li>
+        <li><a href="#">ECONOMÍA</a></li>
+        <li><a href="#">POLÍITCA</a></li>
+      </ul>
+    </nav>
+    <nav class="nav2">
+      <ul >
+        <li><a href="#">USUARIO</a></li>
+        <li><a href="#">AJUSTES</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="separador">
+  <!-- OUTPUT -->
+  <app-form (noticiaEmitida)="getNoticia($event)"></app-form>
+  <!-- INPUT -->
+  <app-posts [miArrNoticias]="arrNoticias"></app-posts>
+</div>
